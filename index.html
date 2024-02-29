@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <h1 id="title">Favorite sports survey</h1>
+    <p id="description">
+      Thank you for taking the time to tell more about your favorite sports
+    </p>
+    <form action="" id="survey-form">
+      <div class="container">
+        <label id="name-label" for="name"
+          >Name:
+          <input
+            type="text"
+            id="name"
+            required
+            placeholder="Enter your Name:"
+          />
+        </label>
+        <label id="email-label" for="email"
+          >Email:
+          <input
+            type="email"
+            id="email"
+            required
+            placeholder="Enter your Email"
+          />
+        </label>
+        <label id="number-label" for="number"
+          >Age:
+          <input type="number" id="number" min="12" max="90" placeholder="Age"
+        /></label>
+      </div>
+      <div class="container">
+        <label for="dropdown"
+          >Which option best describes your current role whith sports?</label
+        >
+        <select name="roles" id="dropdown">
+          <option value="">Select current role</option>
+          <option value="casual">Casual(recreation etc...)</option>
+          <option value="trainning">Trainning( daily exercise)</option>
+          <option value="full time(professional)">
+            Full time(professional)
+          </option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+      <div class="container">
+        <p>Which sport is your favorite?:</p>
+        <label for="football"
+          ><input
+            type="radio"
+            name="favorite"
+            id="football"
+            value="football"
+          />Football</label
+        >
+        <label for="basketball"
+          ><input
+            type="radio"
+            name="favorite"
+            id="basketball"
+            value="basketball"
+          />Basketball</label
+        >
+        <label for="running"
+          ><input
+            type="radio"
+            name="favorite"
+            id="running"
+            value="running"
+          />Running</label
+        >
+        <label for="swimming"
+          ><input
+            type="radio"
+            name="favorite"
+            id="swimming"
+            value="swimming"
+          />Swimming</label
+        >
+        <label for="other"
+          ><input type="radio" name="favorite" id="other" value="other" />Other:
+          <input type="text" name="favorite" id="other-text" value=""
+        /></label>
+      </div>
+      <div class="container">
+        <p>What type of sports events do you attend? (check all that apply):</p>
+        <label for="professional-games"
+          ><input
+            type="checkbox"
+            name="apply"
+            id="professional-games"
+            value="professional-games"
+          />Professional games</label
+        >
+        <label for="amateur-games"
+          ><input
+            type="checkbox"
+            name="apply"
+            id="amateur-games"
+            value="amateur-games"
+          />Amateur games</label
+        >
+        <label for="challenges"
+          ><input
+            type="checkbox"
+            name="apply"
+            id="challenges"
+            value="challenges"
+          />Time challenge sports</label
+        >
+        <label for="competitions"
+          ><input
+            type="checkbox"
+            name="apply"
+            id="competitions"
+            value="competitions"
+          />Competitions</label
+        >
+        <label for="trainning-camps"
+          ><input
+            type="checkbox"
+            name="apply"
+            id="trainning-camps"
+            value="trainning-camps"
+          />Trainning-camps</label
+        >
+        <label for="college-universities"
+          ><input
+            type="checkbox"
+            name="apply"
+            id="college-universities"
+            value="college-universities"
+          />College/Universities</label
+        >
+      </div>
+      <div class="container">
+        <textarea
+          name="text"
+          id="comments"
+          cols="30"
+          rows="5"
+          placeholder="Comments"
+        ></textarea>
+      </div>
+      <div class="container">
+        <button type="submit" id="submit">Submit</button>
+      </div>
+    </form>
+  </body>
+</html>
